@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="toggleBtn" onclick="toggle()">Hide</button>
+    <p id="text">Click to hide me</p>
+  
+    <script>
+      let show = true;
+      const toggle = () => {
+        if (show) {
+          document.getElementById('toggleBtn').innerHTML = 'Show';
+          document.getElementById('text').hidden = true;
+        } else {
+          document.getElementById('toggleBtn').innerHTML = 'Hide';
+          document.getElementById('text').hidden = false;
+        }
+        show = !show;
+      }
+    </script>
+</body>
+</html>

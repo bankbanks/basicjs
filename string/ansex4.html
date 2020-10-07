@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Province</label>
+  <select name="province" id="province" onchange="changeProvince(event)">
+    <option value="bangkok">Bangkok</option>
+    <option value="nonthaburi">Nonthaburi</option>
+  </select>
+  <label for="">District</label>
+  <select name="district" id="district">
+
+  </select>
+
+  <script>
+    const provinceObj = {
+      bangkok: ['Ratchathewi', 'Pathumwan', 'payathai', 'anuzaowari'],
+      nonthaburi: ['Mueang', 'Pakgret']
+    };
+
+    const changeProvince = (e) => {
+      const selectedProvince = e.target.value;
+      const districtArr = provinceObj[selectedProvince].map(ele => `<option>${ele}</option>`);
+      document.getElementById('district').innerHTML = districtArr.join('');
+    };
+  </script>
+</body>
+</html>

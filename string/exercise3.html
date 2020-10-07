@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button class="main-btn" onclick="toggle()">Hide</button>
+    <span class="main-text">Click to hide text</span>
+</body>
+<script>
+    let visibleState = 'show'
+
+    function toggle() {
+        const mainButton = document.querySelector(".main-btn")
+        const mainText = document.querySelector(".main-text")
+        if (visibleState == 'show') {
+            mainButton.innerHTML = 'Show'
+            mainText.style.display = 'none'
+            visibleState = 'hide'
+        } else if (visibleState == 'hide') {
+            mainButton.innerHTML = 'Hide'
+            visibleState = 'show'
+            mainText.style.display = 'inline'
+        }
+        
+    }
+</script>
+
+</html>

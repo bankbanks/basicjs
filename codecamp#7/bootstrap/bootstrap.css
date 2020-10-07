@@ -1,0 +1,12 @@
+
+.btn-primary {
+    color: rgb(232, 230, 227);
+    background-color: rgb(241, 238, 14);
+    border-color: rgb(173, 0, 179);
+}
+
+.border-h1 {
+    padding-top: 10px;
+    border-bottom: 1px solid red;
+    
+}

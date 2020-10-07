@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewrite in array function</title>
+  </head>
+  <body>
+    <script>
+      // (0) -- Function
+    //   const  add = (a, b) => {
+    //     return a + b;
+    //   }
+
+    //   console.log(add(1, 2));
+
+    //   const subtract =(a, b) => {
+    //       return a - b;
+    //   }
+
+    //   console.log(subtract(1, 2));
+
+    //   // (1) -- Function Declaration
+    //   const greetings = () => {
+    //     return "Hello, function !";
+    //   }
+    //   console.log(greetings())
+    //   // (2) -- Function Expression
+    //   const walking = () => {
+    //     return "Walking ...";
+    //   };
+    //   console.log(walking())
+    //   // (3) -- Arrow Function
+    //   const running = () => {
+    //     console.log("Running ...");
+    //   };
+    //   running()
+      // (4) -- First class citizen
+    //   const sayHi = (name, doActivity) => {
+    //     console.log(`Hi, ${name}`);
+    //     doActivity();
+    //   }
+        
+    //   const sayBye = function () {
+    //     console.log("Bye, Codecamp");
+    //   };
+
+    //   sayHi("Bank", sayBye);
+
+      // (5) -- Lets see some real world example
+    //   const testThings = (array) => {
+    //       // array = [1, 2, 3]
+         
+        
+    //     for (let item of array) {
+    //       doSomething(item);
+    //     }
+    //   }
+
+    //   const doSomeAction = (item) => {
+    //     console.log(item);
+    //     return 1
+    //   }
+
+    //   testThings([1, 2, 3], doSomeAction());
+
+        // Function as values in object
+      const person = {
+        name: "NongKnot",
+        gpa: "2.9",
+        age: "20",
+        walking: function () {
+          return("walking");
+        },
+        running: function () {
+          return("running");
+        },
+        playing() {
+          return("playing");
+        },
+      };
+      console.log(` My name is ` + person.name +` i have ` + person.gpa + ` GPA ` + ' i like ' + person.running())
+
+      // (7) --
+      const greaterThan = (n) => {
+        return function (m) {
+          return m > n;
+        };
+      }
+      let greaterThan10 = greaterThan(10);
+      console.log(greaterThan10(11));
+    </script>
+  </body>
+</html> -->

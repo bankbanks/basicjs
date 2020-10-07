@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.heading{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+.leftpg{
+    background-color: aqua;
+    width:  30em;
+    height: 20em;
+}
+.experience{
+    background-color: lightseagreen;
+    display: flex;
+}
